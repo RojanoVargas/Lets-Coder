@@ -1,0 +1,61 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.nav-menu-lc ul{
+    /* background-color: grey; */
+}
+
+.nav-menu-lc a{
+    text-decoration: none;
+    color: black;
+    background-color: #e2dede;
+    padding: 10px 20px;
+    margin: 0 0 0 -4px;
+}
+
+.nav-menu-lc li {
+    display: inline-block;
+}
+
+.grid-center {
+    display: grid;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+
+.logo-lc {
+    margin-bottom: -100px;
+    z-index: 1;
+    border: 2px blue solid;
+    /* box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem blue,
+    0 0 0.8rem blue,
+    0 0 2.8rem blue,
+    inset 0 0 1.3rem blue;  */
+}
+
+.background-img-lc {
+    background-image: url(/img/background-image.jpg);
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    max-width: 80%;
+    padding: 100px 400px 100px 400px;
+}
+
+.fechas {
+    display: flex;
+    flex-direction: row;
+}
+
+.padding-contact-title {
+    padding: 20px 0 40px 0;
+}
