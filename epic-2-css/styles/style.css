@@ -54,8 +54,27 @@ body {
 .fechas {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    padding: 0 750px;
 }
 
 .padding-contact-title {
     padding: 20px 0 40px 0;
+}
+
+.dia {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.btn-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+button {
+    padding: 5px 20px;
+    border: none;
+    box-shadow: 3px 3px black;
 }
