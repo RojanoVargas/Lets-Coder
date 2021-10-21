@@ -1,0 +1,187 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+h1, h2, p {
+    color: white;
+}
+
+.h1-title {
+    text-transform: uppercase;
+    font-size: 50px;
+    display: none;
+}
+
+h2 {
+    font-size: 40px;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #f09,
+    0 0 82px #f09,
+    0 0 92px #f09,
+    0 0 102px #f09,
+    0 0 151px #f09;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.nav-menu-lc ul {
+    margin: 40px 0 0 0;
+}
+
+.nav-menu-lc a {
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    padding: 10px 20px;
+    margin: 0 0 0 -4px;
+    font-size: 20px;
+}
+
+.nav-menu-lc a:hover {
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #f09,
+    0 0 82px #f09,
+    0 0 92px #f09,
+    0 0 102px #f09,
+    0 0 151px #f09;
+}
+
+.nav-menu-lc li {
+    display: inline-block;
+}
+
+.grid-center {
+    display: grid;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+
+.logo-lc {
+    margin-bottom: -100px;
+    z-index: 1;
+    border: 2px blue solid;
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem blue,
+    0 0 0.8rem blue,
+    0 0 2.8rem blue,
+    inset 0 0 1.3rem blue; 
+}
+
+.background-img-lc {
+    background-image: url(/img/background-image.jpg);
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    max-width: 80%;
+    padding: 100px 400px 100px 400px;
+    border: 2px blue solid;
+    box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem blue, 0 0 0.8rem blue, 0 0 2.8rem blue, inset 0 0 1.3rem blue;
+}
+
+.fechas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 750px;
+}
+
+/* .padding-contact-title {
+    padding: 20px 0 40px 0;
+} */
+
+.dia {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.btn-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+button {
+    padding: 5px 20px;
+    border: none;
+    box-shadow: 3px 3px black;
+}
+
+.row {
+    display: flex;
+    padding: 20px;
+    margin: 10px 100px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.3%;
+}
+
+.profile-pic {
+    width: 200px;
+    border-radius: 25%;
+    align-items: center;
+}
+
+.column p {
+    padding: 0 40px;
+}
+
+.subtitle {
+    margin-top: 5%;
+}
+
+.info-about-us {
+    padding: 3% 30%;
+}
+
+
+/* Alumnos */
+.list-container,
+.table-container,
+.container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0 60px 0;
+}
+table {
+    color: white;
+    box-shadow: 0 0 0.2rem #fff, 
+                0 0 0.2rem #fff, 
+                0 0 2rem blue, 
+                0 0 0.8rem blue, 
+                0 0 2.8rem blue, 
+                inset 0 0 1.3rem blue;
+    padding: 20px;
+}
+
+td {
+    padding: 20px;
+    text-align: center;
+    border: solid 1px white;
+}
+
+.big-size-list {
+    font-size: 30px;
+}
+
+.btn-submit {
+    
+}

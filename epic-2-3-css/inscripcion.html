@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/own-style.css">
+    <title>Formulario de inscripción de Let's Coder</title>
+</head>
+<body>
+    <nav class="nav-menu-lc">
+        <ul>
+            <li><a href="/epic-2-3-css/home.html">Home</a></li>
+            <li><a href="/epic-2-3-css/conocenos.html">Sobre nosotros</a></li>
+            <li><a href="/epic-2-3-css/contacto.html">Contacto</a></li>
+            <li><a href="/epic-2-3-css/alumnos.html">Alumnos</a></li>
+            <li><a href="/epic-2-3-css/inscripcion.html">Inscripción</a></li>
+        </ul>
+    </nav>
+    
+    <div class="grid-center">
+        <img class="logo-lc" src="/img/letscoder-square.jpeg" alt="logo de let's coder">
+        <div class="background-img-lc">
+            <h1 class="h1-title">Let's Coder</h1>
+        </div>
+    </div>
+    <div class="center">
+        <h2 class="padding-contact-title subtitle">Formulario de inscripción</h2>
+    </div>
+    
+    <div class="container-form">
+        <form action="/action_page.php">
+            <label for="fname">Nombre de pila:</label><br>
+            <input type="text"><br>
+            <label for="lname">Apellidos:</label><br>
+            <input type="text"><br>
+            <label for="city">Población:</label><br>
+            <input type="text"><br>
+            <label for="age">Edad:</label><br>
+            <input type="number"><br>
+            <label for="phone">Teléfono:</label><br>
+            <input type="tel"><br>
+            <label for="email">Email:</label><br>
+            <input type="email"><br>
+            <label for="startdate">Fecha comienzo del curso:</label><br>
+            <input type="date"><br>
+            <p>Sexo:</p>
+
+            <div>
+                <input type="radio" id="huey" name="drone" value="huey" checked>
+                <label for="huey">Hombre</label>
+            </div>
+
+            <div>
+                <input type="radio" id="dewey" name="drone" value="dewey">
+                <label for="dewey">Mujer</label>
+            </div>
+
+            <div>
+                <input type="radio" id="louie" name="drone" value="louie">
+                <label for="louie">Prefiero no contestar</label>
+            </div>
+            
+            
+            <input class="btn-submit" type="submit" value="Submit">
+        </form> 
+    </div>
+
+
+
+
+
+
+</body>
+</html>
