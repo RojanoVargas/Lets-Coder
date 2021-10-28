@@ -97,6 +97,7 @@ h2 {
     flex-direction: row;
     justify-content: space-around;
     padding: 0 750px;
+    padding: 0 520px;
 }
 
 /* .padding-contact-title {
@@ -181,9 +182,9 @@ td {
     font-size: 30px;
 }
 
-.btn-submit {
+/* .btn-submit {
     
-}
+} */
 
 input {
     margin: 5% 0;
@@ -198,4 +199,52 @@ input {
 
 .container-form > div {
 	width: 50%;
+}
+
+.fifty {
+    width: 40%;
+    display: inline-block;
+    margin: 2%;
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    padding: 2%;
+
+}
+
+.btn-submit:hover {
+    width: 100%;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    padding: 2%;
+    box-shadow: 0 0 0.2rem #fff, 
+    0 0 0.2rem #fff, 
+    0 0 2rem blue, 
+    0 0 0.8rem blue, 
+    0 0 2.8rem blue, 
+    inset 0 0 1.3rem blue;
+}
+
+.btn-flex-home {
+    color: black;
+    font-weight: 700;
+}
+
+.btn-flex-home:hover,
+.btn-flex:hover {
+    box-shadow: 0 0 0.2rem #fff, 
+    0 0 0.2rem #fff, 
+    0 0 2rem blue, 
+    0 0 0.8rem blue, 
+    0 0 2.8rem blue, 
+    inset 0 0 1.3rem blue;
+}
+
+.fifty-padding {
+    padding-top: 20px;
 }
