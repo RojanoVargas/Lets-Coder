@@ -3,6 +3,10 @@
 
 let edadFernando = 57;
 
+if (age < edadFernando) text = "Eres más joven que Fernando"
+if (age == edadFernando) text = "Tienes la misma edad que Fernando"
+if (age > edadFernando) text = "Eres más mayor que Fernando"
+
 
 //2. Escribir el código de una función a la que se pasa como parámetro un número entero y devuelve como resultado una string que indica si el número es par o impar. Mostrar por pantalla el resultado devuelto por la función.
 //if(), %
