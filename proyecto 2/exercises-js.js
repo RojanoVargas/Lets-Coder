@@ -1,22 +1,56 @@
 //1. Compara tu edad (o una cualquiera) con la de Fernando. muestra en consola si eres menor, mayor o tienes la misma edad que él.
 //if()
 
-let edadFernando = 57;
+// let edadFernando = 57;
 
-if (age < edadFernando) text = "Eres más joven que Fernando"
-if (age == edadFernando) text = "Tienes la misma edad que Fernando"
-if (age > edadFernando) text = "Eres más mayor que Fernando"
+// if (age < edadFernando) text = "Eres más joven que Fernando"
+// if (age == edadFernando) text = "Tienes la misma edad que Fernando"
+// if (age > edadFernando) text = "Eres más mayor que Fernando"
+
+
+let edadFernando = 57;
+let miEdad = 25;
+function diferenciaEdad(age, edad) {
+    if (age < edad) {
+        console.log ("Eres más joven que Fernando");
+    }
+    else if (age == edad) {
+        console.log ("Tienes la misma edad que Fernando");
+    }
+    else {
+        console.log ("Eres más mayor que Fernando");
+    }
+}
+diferenciaEdad(10, 10);
+diferenciaEdad(24, edadFernando);
+diferenciaEdad(57, edadFernando);
+diferenciaEdad(77, edadFernando);
+diferenciaEdad(miEdad, edadFernando);
 
 
 //2. Escribir el código de una función a la que se pasa como parámetro un número entero y devuelve como resultado una string que indica si el número es par o impar. Mostrar por pantalla el resultado devuelto por la función.
 //if(), %
-
-
+function esPar(value) {
+	if (value%2 == 0)
+		console.log ("¡Es par!");
+	else
+		console.log ("¡No es par!");
+}
+esPar(22)
 //3. Recorre la array y muestra los valores múltiplos de 3 en consola
 //for(), if(), %
 
-let numeros = [45, 2, 35, 12, 32, 45, 90, 12, 67, 87, 1, 46, 97, 49, 72, 17, 34, 2, 94, 28, 51, 31, 29, 18, 62, 2, 4, 13, 4, 98, 15, 75, 12, 43];
+console.log('hello world');
 
+let numeros = [45, 2, 35, 12, 32, 45, 90, 12, 67, 87, 1, 46, 97, 49, 72, 17, 34, 2, 94, 28, 51, 31, 29, 18, 62, 2, 4, 13, 4, 98, 15, 75, 12, 43];
+tres = [];
+function divisibleTres(array) {
+    for (i = 0, len = array.length; i < len; i++) {
+        if (array[i] % 3 == 0) {
+            three.push (array[i]);
+        }
+    }
+}
 //4. Dada la array, escribe una función que encuentre el número menor. (No utilizar Math.min())
 //for(), if()
 
@@ -49,7 +83,7 @@ let numeros = [45, 2, 35, 12, 32, 45, 90, 12, 67, 87, 1, 46, 97, 49, 72, 17, 34,
 //10. Haz una copia de la array del ejercicio 3, ordenala de forma ascendente, y coloca el siguiente número donde le corresponda.
 //Array.from(), sort(), splice(), for(), if()
 
-let numeros = [45, 2, 35, 12, 32, 45, 90, 12, 67, 87, 1, 46, 97, 49, 72, 17, 34, 2, 94, 28, 51, 31, 29, 18, 62, 2, 4, 13, 4, 98, 15, 75, 12, 43];
+let numeros2 = [45, 2, 35, 12, 32, 45, 90, 12, 67, 87, 1, 46, 97, 49, 72, 17, 34, 2, 94, 28, 51, 31, 29, 18, 62, 2, 4, 13, 4, 98, 15, 75, 12, 43];
 
     
 
