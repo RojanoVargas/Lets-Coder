@@ -11,14 +11,18 @@ function infoClasificacion(clasificar){
         let victorias = clasificar[i].won;
         let empates = clasificar[i].draw;
         let derrotas = clasificar[i].lost;
-        // let golesFavor
-        // let golesContra
-        // let diferenciaGoles
-        // let puntos = standings[i].points;
+        let golesFavor = clasificar[i].goalsFor;
+        let golesContra = clasificar[i].goalsAgainst;
+        let diferenciaGoles = clasificar[i].goalDifference;
+        let puntos = clasificar[i].points;
+        let imgEscudo = document.createElement("img");
+        imgEscudo.setAttribute("src", clasificar[i].team.crestUrl);
+        imgEscudo.classList.add("escudos");
+        // let escudo = clasificar[i].team.crestUrl
     
 
 
-    let tablaClasificacion = [posicion, equipo, partidosJugados, victorias, empates, derrotas];
+    let tablaClasificacion = [posicion, imgEscudo, equipo, partidosJugados, victorias, empates, derrotas, golesFavor, golesContra, diferenciaGoles, puntos];
 
     for(let j = 0; j < tablaClasificacion.length; j++){
         const td = document.createElement("td");

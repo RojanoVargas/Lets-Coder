@@ -36,7 +36,36 @@ function infoPartidos(matches){
 }
 infoPartidos(partidos.matches);
 
+
+
+function datosFiltrados (datosPartidos) {
+    let inputData = document.getElementById("equipo").value;
+
+    let arrayFiltrada = datosPartidos.filter((p)=>{
+        if (p.homeTeam.name.toLowerCase().includes(inputData.toLowerCase().value) || (p.awayTeam.name.toLowerCase()).includes(inputData.toLowerCase().value)){
+
+            return true;
+        }
+        else {
+            return false;
+        }
+    })
+
+    crearTablaResultados(arrayFiltrada)
+}
+
+
+
+
+
+
 // https://crests.football-data.org/ + matches[i].homeTeam.id + ".svg"
 
 // clasificacion.stadings[0].table.team.crestUrl
 
+
+// dentro del fetch
+// let buttonSearch = document.getElementById("search");
+// buttonSearch.addEventListener("click"), function () {
+//     datosFiltrados(partidos.matches);
+// }
