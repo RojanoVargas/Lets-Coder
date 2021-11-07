@@ -41,9 +41,9 @@ infoPartidos(partidos.matches);
 function datosFiltrados (datosPartidos) {
     let inputData = document.getElementById("equipo").value;
 
-    let arrayFiltrada = datosPartidos.filter((p)=>{
-        if (p.homeTeam.name.toLowerCase().includes(inputData.toLowerCase().value) || (p.awayTeam.name.toLowerCase()).includes(inputData.toLowerCase().value)){
-
+    let arrayFiltrada = datosPartidos.filter((p) =>{
+        // if (p.homeTeam.name.toLowerCase().includes(inputData.toLowerCase().value) || (p.awayTeam.name.toLowerCase()).includes(inputData.toLowerCase().value)){
+        if (p.homeTeam.name.includes(inputData)  || p.homeTeam.name.includes(inputData)){
             return true;
         }
         else {
@@ -51,11 +51,15 @@ function datosFiltrados (datosPartidos) {
         }
     })
 
-    crearTablaResultados(arrayFiltrada)
+    infoPartidos(arrayFiltrada);
 }
 
+let boton = document.getElementById("buscarEquipos");
+boton.addEventListener("click", ()=>{
+    datosFiltrados(partidos.matches);
+});
 
-
+// datosFiltrados(partidos.matches);
 
 
 
