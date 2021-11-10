@@ -10,12 +10,12 @@
 </head>
 <body>
     <input id="buscarEquipos" type="text" keyup="datosFiltrados()" placeholder="Busca...">
-    <table>
-        <thead>
-            <th colspan="2">equipo local</th>
-            <th>resultado</th>
-            <th colspan="2">equipo visitante</th>
-            <th colspan="1">fecha partido</th>
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <th colspan="2" scope="col">equipo local</th>
+            <th scope="col">resultado</th>
+            <th colspan="2" scope="col">equipo visitante</th>
+            <th colspan="1" scope="col">fecha partido</th>
             <th>jornada</th>
         </thead>
         <tbody id="tabla-partidos"></tbody>
