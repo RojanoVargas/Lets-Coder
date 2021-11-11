@@ -10,6 +10,15 @@
 </head>
 <body>
     <input id="buscarEquipos" type="text" keyup="datosFiltrados()" placeholder="Busca...">
+
+    <form id="buscarEquipos" action="datosFiltrados()">
+        <input type="text" placeholder="Search..">
+        <button type="submit" onclick="datosFiltrados()"><i class="fa fa-search"></i></button>
+    </form>
+
+
+
+
     <table class="table table-striped mx-auto" style="width: 40%">
         <thead class="thead-dark">
             <th colspan="2" scope="col">Equipo local</th>
