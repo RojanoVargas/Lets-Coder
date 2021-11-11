@@ -1,7 +1,6 @@
-console.log(partidos.matches);
-
 function infoPartidos(matches){
     let cuerpoTable = document.getElementById("tabla-partidos");
+    cuerpoTable.innerHTML = '';
     for(let i = 0; i < matches.length; i++){//  inicializamos; vueltas que tiene que dar el bucle menor que el número de elementos; sumamos cada vuelta
         const tr = document.createElement("tr");
         let jornada = matches[i].matchday;
@@ -34,7 +33,7 @@ function infoPartidos(matches){
         cuerpoTable.appendChild(tr);
     } 
 }
-infoPartidos(partidos.matches);
+infoPartidos(matches);
 
 
 
@@ -43,7 +42,7 @@ function datosFiltrados (datosPartidos) {
 
     let arrayFiltrada = datosPartidos.filter((p) =>{
         // if (p.homeTeam.name.toLowerCase().includes(inputData.toLowerCase().value) || (p.awayTeam.name.toLowerCase()).includes(inputData.toLowerCase().value)){
-        if (p.homeTeam.name.includes(inputData)  || p.homeTeam.name.includes(inputData)){
+        if (p.homeTeam.name.toLowerCase().includes(inputData.toLowerCase())  || p.awayTeam.name.toLowerCase().includes(inputData.toLowerCase())){
             return true;
         }
         else {

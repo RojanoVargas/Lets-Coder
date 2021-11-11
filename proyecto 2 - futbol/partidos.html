@@ -11,12 +11,11 @@
 <body>
     <!-- <input id="buscarEquipos" type="text" keyup="datosFiltrados()" placeholder="Busca..."> -->
 
-    <form id="buscarEquipos" action="datosFiltrados()">
-        <input type="text" placeholder="Search..">
-        <button type="submit" onclick="datosFiltrados()"><i class="fa fa-search"></i></button>
-    </form>
-
-
+    <div>
+        <input id="equipo" type="text" placeholder="Search..">
+        <button type="submit" id="buscarEquipos">Buscar</button>
+        <button type="submit" id="">Refresh</button>
+    </div>
 
 
     <table class="table table-striped mx-auto" style="width: 40%">
@@ -31,7 +30,10 @@
     </table>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="partidos.js"></script>
-    <script src="funcion-partidos.js"></script>
+    <!-- <script src="partidos.js"></script> -->
+    <script src="funcion-partidos-fetch.js"></script>
 </body>
 </html>
+
+<!-- style.display - div padre
+style.visibility - div hijo -->
