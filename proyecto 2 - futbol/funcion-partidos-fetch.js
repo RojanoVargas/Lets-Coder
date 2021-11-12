@@ -3,7 +3,7 @@
 
 function getFetch(){
     const url = "https://api.football-data.org/v2/competitions/2014/matches"
-    //spinner
+    document.getElementById("spinner").style.display="block";
     fetch(url, {
         method: "GET",
         headers: {
@@ -14,8 +14,11 @@ function getFetch(){
             return response.json();
         }
     }).then(data => {
+        console.log(data);
         let partidos = data.matches;
         //quitar spinner
+        document.getElementById("spinner").style.display="none";
+
         infoPartidos(partidos); //tiene que estar dentro
 
         let boton = document.getElementById("buscarEquipos");
