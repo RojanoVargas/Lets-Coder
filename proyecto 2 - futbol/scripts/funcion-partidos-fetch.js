@@ -3,6 +3,7 @@
 
 function getFetch(){
     const url = "https://api.football-data.org/v2/competitions/2014/matches"
+    //añadir spinner
     document.getElementById("spinner").style.display="block";
     fetch(url, {
         method: "GET",

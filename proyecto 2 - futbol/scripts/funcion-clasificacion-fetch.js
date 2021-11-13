@@ -3,7 +3,8 @@
 
 function getFetch(){
     const url = "https://api.football-data.org/v2/competitions/2014/standings"
-    //spinner
+    //añadir spinner
+    document.getElementById("spinner").style.display="block";
     fetch(url, {
         method: "GET",
         headers: {
@@ -18,6 +19,7 @@ function getFetch(){
         console.log (data);
         let tabla = data.standings[0].table;//navegar dentro de data para llegar a la info que queremos (ya que no los necesito todos)
         //quitar spinner
+        document.getElementById("spinner").style.display="none";
         infoClasificacion(tabla); //tiene que estar dentro
     })       
 }
